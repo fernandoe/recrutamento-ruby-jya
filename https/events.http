@@ -1,0 +1,9 @@
+### Send POST request with json body
+#POST http://127.0.0.1:3000/events
+POST https://2e6c-138-118-85-175.sa.ngrok.io/events
+Content-Type: application/json
+
+{
+  "id": 999,
+  "value": "content"
+}
