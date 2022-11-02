@@ -1,0 +1,2 @@
+GET {{SERVER}}/rails/info/routes
+Content-Type: application/json

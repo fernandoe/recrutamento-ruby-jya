@@ -1,0 +1,4 @@
+###
+### Getr the issues from the database
+GET {{SERVER}}/issues
+Content-Type: application/json

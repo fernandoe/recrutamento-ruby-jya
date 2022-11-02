@@ -1,5 +1,7 @@
 # commands
 
+## rails
+
 ```bash
 % ruby --version
 ruby 3.0.0p0 (2020-12-25 revision 95aff21468) [x86_64-linux]
@@ -13,6 +15,11 @@ Rails 7.0.4
 rails new octo1 --api 
 ```
 
+### database
+
+```bash
+rails generate model Event payload:text
+```
 
 ## gems
 

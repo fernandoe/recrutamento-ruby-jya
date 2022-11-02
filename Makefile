@@ -6,3 +6,6 @@ run-rails-routes:
 
 run-rails-server:
 	cd octo1; rails server -b 0.0.0.0
+
+run-ngrok:
+	 cd octo1; ngrok http 3000

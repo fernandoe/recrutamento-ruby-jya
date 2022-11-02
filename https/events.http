@@ -1,6 +1,6 @@
-### Send POST request with json body
-#POST http://127.0.0.1:3000/events
-POST https://2e6c-138-118-85-175.sa.ngrok.io/events
+###
+### Save an event to the database
+POST {{SERVER}}/events
 Content-Type: application/json
 
 {

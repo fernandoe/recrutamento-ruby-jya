@@ -6,5 +6,7 @@ Rails.application.routes.draw do
 
   post 'events', to: 'events#create', controller: 'evets'
 
-  resources :issues
+  get 'issues', to: 'issues#show', controller: 'issues'
+
+  # resources :issues
 end
