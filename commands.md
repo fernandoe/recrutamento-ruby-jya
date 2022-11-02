@@ -19,7 +19,12 @@ rails new octo1 --api
 
 ```bash
 rails generate model Event payload:text
+
+rails db:migrate
+rails db:setup
 ```
+
+
 
 ## gems
 
