@@ -11,7 +11,9 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema[7.0].define(version: 2022_11_02_200946) do
-  create_table "events", force: :cascade do |t|
+  create_table "events", charset: "latin1", force: :cascade do |t|
+    t.string "event_type"
+    t.integer "identifier"
     t.text "payload"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

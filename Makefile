@@ -1,11 +1,14 @@
 run-rubocop:
-	cd octo1; rubocop
+	cd octo; rubocop
 
 run-rails-routes:
-	cd octo1; rails routes
+	cd octo; rails routes
 
 run-rails-server:
-	cd octo1; rails server -b 0.0.0.0
+	cd octo; rails server -b 0.0.0.0
 
 run-ngrok:
-	 cd octo1; ngrok http 3000
+	 cd octo; ngrok http 3000
+
+run-migrations:
+	 cd octo; bin/rails db:migrate

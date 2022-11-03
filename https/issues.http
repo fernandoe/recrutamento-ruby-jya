@@ -1,4 +1,4 @@
 ###
 ### Getr the issues from the database
-GET {{SERVER}}/issues
+GET {{SERVER}}/issues/1/events
 Content-Type: application/json

@@ -4,9 +4,10 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
 
-  post 'events', to: 'events#create', controller: 'evets'
+  post 'events', to: 'events#create', controller: 'events'
 
-  get 'issues', to: 'issues#show', controller: 'issues'
+  get '/issues/:identifier/events', to: 'issues#issues', controller: 'issues'
 
+  # GET /issues/1000/events
   # resources :issues
 end

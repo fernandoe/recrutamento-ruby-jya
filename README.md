@@ -56,3 +56,35 @@ The Events endpoint will expose the persist the events by an api that will filte
     - `rails s -p 3000 -b '0.0.0.0'`
 * The oldest supported Ruby version is 2.5.1;
 * Have fun and we hope you succeed :-)
+
+
+## 3. Running the project
+
+### Setup and configuration
+
+The application runs with docker/docker-compose (docker-compose.yml). There are two services (app and database),
+to start the services you need to run.
+
+```shell
+docker-compose up
+```
+
+To run migrations, open another terminal and run the following command:
+
+```shell
+docker-compose exec app rails db:migrate
+```
+
+### Test Application
+
+To run the unit tests, you can execute in a terminal:
+
+```shell
+docker-compose exec app rspec
+```
+
+To test the issues endpoint to get their events, you can execute:
+
+```shell
+curl http://127.0.0.1:3000/issues/10/events
+```
